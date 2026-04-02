@@ -125,6 +125,46 @@ input[type=number]::-webkit-outer-spin-button,input[type=number]::-webkit-inner-
 </style>
 </head>
 <body>
+
+<!-- ===== LANDING ===== -->
+<div id="p-landing" style="min-height:100vh;background:#000;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px 24px;text-align:center;position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;opacity:0.03;background-image:linear-gradient(rgba(2,83,157,1) 1px,transparent 1px),linear-gradient(90deg,rgba(2,83,157,1) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;"></div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:14px;margin-bottom:40px;">
+    <svg width="70" height="70" viewBox="0 0 200 200" fill="none"><text x="10" y="130" font-family="Georgia,serif" font-size="115" fill="white">A</text><text x="85" y="175" font-family="Georgia,serif" font-size="105" fill="white">P</text></svg>
+    <div>
+      <div style="color:#fff;font-size:13px;font-weight:600;letter-spacing:0.4em;text-transform:uppercase;">AURION PATRIMOINE</div>
+      <div style="color:rgba(255,255,255,0.25);font-size:9px;letter-spacing:0.25em;text-transform:uppercase;margin-top:2px;">CONSEIL EN GESTION DE PATRIMOINE INDÉPENDANT</div>
+    </div>
+  </div>
+  <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(2,83,157,0.2);border:0.5px solid rgba(2,83,157,0.45);color:#5aafff;font-size:11px;padding:5px 14px;border-radius:20px;margin-bottom:24px;">
+    <svg width="6" height="6" viewBox="0 0 6 6"><circle cx="3" cy="3" r="3" fill="#5aafff"/></svg>
+    Découvrez votre stratégie en 2 minutes
+  </div>
+  <h1 style="color:#fff;font-size:clamp(26px,5vw,46px);font-weight:700;line-height:1.15;margin-bottom:18px;max-width:640px;">Votre argent travaille-t-il vraiment <span style="color:#5aafff;">pour vous ?</span></h1>
+  <p style="color:rgba(255,255,255,0.42);font-size:15px;line-height:1.65;max-width:500px;margin:0 auto 36px;">Répondez à 10 questions. Recevez une analyse patrimoniale personnalisée et découvrez exactement quels placements correspondent à votre situation.</p>
+  <div style="display:flex;gap:32px;margin-bottom:44px;flex-wrap:wrap;justify-content:center;">
+    <div style="text-align:center;"><div style="font-size:26px;font-weight:700;color:#5aafff;">2 min</div><div style="font-size:10px;color:rgba(255,255,255,0.28);text-transform:uppercase;letter-spacing:0.12em;margin-top:3px;">Pour compléter</div></div>
+    <div style="text-align:center;"><div style="font-size:26px;font-weight:700;color:#5aafff;">100%</div><div style="font-size:10px;color:rgba(255,255,255,0.28);text-transform:uppercase;letter-spacing:0.12em;margin-top:3px;">Gratuit</div></div>
+    <div style="text-align:center;"><div style="font-size:26px;font-weight:700;color:#5aafff;">Sans</div><div style="font-size:10px;color:rgba(255,255,255,0.28);text-transform:uppercase;letter-spacing:0.12em;margin-top:3px;">Engagement</div></div>
+  </div>
+  <button onclick="startQuiz()" style="background:#02539d;color:#fff;padding:17px 40px;border-radius:8px;font-size:16px;font-weight:700;border:none;cursor:pointer;width:100%;max-width:380px;display:block;transition:all 0.2s;font-family:inherit;">Démarrer mon analyse gratuite →</button>
+  <div style="color:rgba(255,255,255,0.2);font-size:11px;margin-top:10px;">Sans inscription · Résultat immédiat · Conseil indépendant</div>
+  <div style="display:flex;gap:22px;margin-top:32px;flex-wrap:wrap;justify-content:center;">
+    <div style="display:flex;align-items:center;gap:7px;color:rgba(255,255,255,0.28);font-size:11px;">
+      <div style="width:14px;height:14px;border-radius:50%;background:rgba(29,158,117,0.2);border:0.5px solid rgba(29,158,117,0.4);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="8" height="6" viewBox="0 0 8 6" fill="none"><path d="M1 3L3 5L7 1" stroke="#1D9E75" stroke-width="1.2" stroke-linecap="round"/></svg></div>Cabinet indépendant
+    </div>
+    <div style="display:flex;align-items:center;gap:7px;color:rgba(255,255,255,0.28);font-size:11px;">
+      <div style="width:14px;height:14px;border-radius:50%;background:rgba(29,158,117,0.2);border:0.5px solid rgba(29,158,117,0.4);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="8" height="6" viewBox="0 0 8 6" fill="none"><path d="M1 3L3 5L7 1" stroke="#1D9E75" stroke-width="1.2" stroke-linecap="round"/></svg></div>Conseil personnalisé
+    </div>
+    <div style="display:flex;align-items:center;gap:7px;color:rgba(255,255,255,0.28);font-size:11px;">
+      <div style="width:14px;height:14px;border-radius:50%;background:rgba(29,158,117,0.2);border:0.5px solid rgba(29,158,117,0.4);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="8" height="6" viewBox="0 0 8 6" fill="none"><path d="M1 3L3 5L7 1" stroke="#1D9E75" stroke-width="1.2" stroke-linecap="round"/></svg></div>Données sécurisées
+    </div>
+  </div>
+  <p style="color:rgba(255,255,255,0.12);font-size:10px;margin-top:40px;line-height:1.6;max-width:500px;">Ceci n'est pas un conseil en investissement au sens de la réglementation MIF 2. Les simulations présentées sont indicatives et ne constituent pas une recommandation personnalisée. Aurion Patrimoine · 2026</p>
+</div>
+
+<!-- ===== QUIZ ===== -->
+<div id="p-quiz" style="display:none;">
 <div class="inner">
   <div class="hd">
     <div class="hd-logo">A &nbsp; P</div>
@@ -140,6 +180,7 @@ input[type=number]::-webkit-outer-spin-button,input[type=number]::-webkit-inner-
   </div>
   <div id="quiz-zone"></div>
   <div id="result-zone" style="display:none;"></div>
+</div>
 </div>
 
 <script>
@@ -220,7 +261,7 @@ function nxt(){
   if(q.type==='slider')ans[q.id]=parseInt(document.getElementById('sl').value);
   else if(q.type==='multi')ans[q.id]=selMulti.map(i=>q.opts[i].t);
   else{if(selVal===null)return;ans[q.id]=q.opts[selVal].t;}
-  step++;if(step<QS.length)render();else showResult();
+  step++;if(step<QS.length)render();else showContact();
 }
 function goBack(){if(step>0){step--;render();}}
 
@@ -315,7 +356,7 @@ function showResult(){
   let h='';
   h+='<div class="res-hero">';
   h+='<div class="res-badge '+(isQualifie?'hot':'warm')+'">'+(isQualifie?'Profil qualifié 🔥':'Profil à fort potentiel ⚡')+'</div>';
-  h+='<div class="res-title">Votre stratégie patrimoniale personnalisée</div>';
+  h+='<div class="res-title">'+(ans.prenom?ans.prenom+', votre':'Votre')+' stratégie patrimoniale personnalisée</div>';
   h+='<div class="res-sub">Basé sur vos réponses, voici exactement les solutions adaptées à votre situation — uniquement celles qui correspondent à votre profil.</div>';
   h+='</div>';
   if(hasPER&&ecoAn>0){
@@ -388,15 +429,64 @@ function showResult(){
   },150);
 }
 
+function startQuiz(){
+  document.getElementById('p-landing').style.display='none';
+  document.getElementById('p-quiz').style.display='block';
+  render();
+}
+
+function showContact(){
+  document.getElementById('quiz-zone').innerHTML=`
+    <div class="qcard">
+      <div class="qcard-head">
+        <div class="q-tag">Dernière étape</div>
+        <div class="q-txt">Où souhaitez-vous recevoir votre analyse ?</div>
+        <div class="q-hint">Vos informations restent confidentielles — aucun démarchage abusif</div>
+      </div>
+      <div class="qcard-body">
+        <div style="margin-bottom:12px;">
+          <label style="font-size:12px;font-weight:500;color:rgba(255,255,255,0.5);display:block;margin-bottom:6px;">Prénom *</label>
+          <input type="text" id="c-prenom" placeholder="Votre prénom" style="width:100%;padding:12px 14px;border:1.5px solid rgba(255,255,255,0.07);border-radius:8px;font-size:14px;font-family:inherit;outline:none;background:#1a1a1a;color:#fff;transition:border-color 0.2s;" onfocus="this.style.borderColor='#02539d'" onblur="this.style.borderColor='rgba(255,255,255,0.07)'">
+        </div>
+        <div style="margin-bottom:12px;">
+          <label style="font-size:12px;font-weight:500;color:rgba(255,255,255,0.5);display:block;margin-bottom:6px;">Nom *</label>
+          <input type="text" id="c-nom" placeholder="Votre nom" style="width:100%;padding:12px 14px;border:1.5px solid rgba(255,255,255,0.07);border-radius:8px;font-size:14px;font-family:inherit;outline:none;background:#1a1a1a;color:#fff;transition:border-color 0.2s;" onfocus="this.style.borderColor='#02539d'" onblur="this.style.borderColor='rgba(255,255,255,0.07)'">
+        </div>
+        <div style="margin-bottom:16px;">
+          <label style="font-size:12px;font-weight:500;color:rgba(255,255,255,0.5);display:block;margin-bottom:6px;">Email *</label>
+          <input type="email" id="c-email" placeholder="votre@email.com" style="width:100%;padding:12px 14px;border:1.5px solid rgba(255,255,255,0.07);border-radius:8px;font-size:14px;font-family:inherit;outline:none;background:#1a1a1a;color:#fff;transition:border-color 0.2s;" onfocus="this.style.borderColor='#02539d'" onblur="this.style.borderColor='rgba(255,255,255,0.07)'">
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:18px;">
+          <input type="checkbox" id="consent" style="margin-top:2px;width:16px;height:16px;flex-shrink:0;accent-color:#02539d;cursor:pointer;">
+          <label for="consent" style="font-size:11px;color:rgba(255,255,255,0.3);line-height:1.55;cursor:pointer;">J'accepte d'être contacté par Aurion Patrimoine pour recevoir mon analyse patrimoniale. Données confidentielles, sans démarchage abusif.</label>
+        </div>
+        <button onclick="submitContact()" class="btn">Recevoir mon analyse →</button>
+        <p style="font-size:10px;color:rgba(255,255,255,0.15);text-align:center;margin-top:12px;line-height:1.6;">Ceci n'est pas un conseil en investissement au sens MIF 2 · Aurion Patrimoine · 2026</p>
+      </div>
+    </div>`;
+}
+
+function submitContact(){
+  const prenom=(document.getElementById('c-prenom')?.value||'').trim();
+  const nom=(document.getElementById('c-nom')?.value||'').trim();
+  const email=(document.getElementById('c-email')?.value||'').trim();
+  const consent=document.getElementById('consent')?.checked;
+  if(!prenom||!nom){alert('Merci de renseigner votre prénom et nom.');return;}
+  if(!email||!email.includes('@')){alert('Merci de renseigner un email valide.');return;}
+  if(!consent){alert("Merci d'accepter les conditions.");return;}
+  ans.prenom=prenom; ans.nom=nom; ans.email=email;
+  showResult();
+}
+
 function restart(){
   step=0;ans={};selVal=null;selMulti=[];
   if(chart){chart.destroy();chart=null;}
+  document.getElementById('p-landing').style.display='flex';
+  document.getElementById('p-quiz').style.display='none';
   document.getElementById('prog-wrap').style.display='block';
   document.getElementById('quiz-zone').style.display='block';
   document.getElementById('result-zone').style.display='none';
-  render();
 }
-render();
 </script>
 </body>
 </html>
